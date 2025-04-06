@@ -1,5 +1,11 @@
 ---
-import "../styles/global.css";
+const pageTitle = "关于我";
+const identity = {
+  firstName: "莎拉",
+  country: "加拿大",
+  occupation: "技术撰稿人",
+  hobbies: ["摄影", "观鸟", "棒球"],
+};
 ---
 
 <html lang="en">
@@ -12,15 +18,11 @@ import "../styles/global.css";
   </head>
   <body>
     <a href="/">主页</a>
-    <a href="/about">关于我</a>
+    <a href="/about">{pageTitle}</a>
     <a href="/blog">博客</a>
-    <h1>这是我的博客</h1>
+    <h1>{pageTitle}</h1>
+
     <h1>....和我的Astro站点</h1>
-    <p>我正在学习Astro的入门教程。这是我网站上的第三个页面。</p>
-    <ul>
-      <li><a href="/posts/post-1/">文章 1</a></li>
-      <li><a href="/posts/post-2/">文章 2</a></li>
-      <li><a href="/posts/post-2/">文章 3</a></li>
-    </ul>
+    <p>我正在学习Astro的入门教程。这是我网站上的第二个页面。</p>
   </body>
 </html>

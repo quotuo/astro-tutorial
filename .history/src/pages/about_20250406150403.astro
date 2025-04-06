@@ -1,0 +1,29 @@
+---
+const pageTitle = "关于我";
+const identity = {
+  firstName: "莎拉",
+  country: "加拿大",
+  occupation: "技术撰稿人",
+  hobbies: ["摄影", "观鸟", "棒球"],
+};
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <a href="/">主页</a>
+    <a href="/about">{pageTitle}</a>
+    <a href="/blog">博客</a>
+    <h1>{pageTitle}</h1>
+
+    <h1>....和我的Astro站点</h1>
+    <p>我正在学习Astro的入门教程。这是我网站上的第二个页面。</p>
+  </body>
+</html>
